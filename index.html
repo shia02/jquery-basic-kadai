@@ -3,16 +3,44 @@
 
 <head>
  <meta charset="UTF-8">
- <title>CSS操作</title>
- <link rel="stylesheet" href="css/style.css">
+ <title>フォーム制御</title>
 </head>
 
 <body>
- <p id="target">class属性の操作を理解しよう</p>
- <button id="red">red</button>
- <button id="blue">blue</button><br>
- <button id="add">addClass</button>
- <button id="remove">removeClass</button>
+ <form>
+   <!-- 名前 -->
+   <div>
+     <span>名前：</span>
+     <input type="text" name="username" />
+   </div>
+   <!-- 性別 -->
+   <div>
+     <span>性別：</span>
+     <input type="radio" name="gender" value="male">男
+     <input type="radio" name="gender" value="female">女
+     <input type="radio" name="gender" value="other">その他
+   </div>
+   <!-- 血液型 -->
+   <div>
+     <span>血液型：</span>
+     <select name="blood">
+       <option value="a">A型</option>
+       <option value="b">B型</option>
+       <option value="o">O型</option>
+       <option value="ab">AB型</option>
+       <option value="unknown">不明</option>
+     </select>
+   </div>
+   <!-- 趣味 -->
+   <div>
+     <span>趣味：</span>
+     <input type="checkbox" name="hobby" value="book">読書
+     <input type="checkbox" name="hobby" value="music">音楽
+     <input type="checkbox" name="hobby" value="movie">映画
+     <input type="checkbox" name="hobby" value="walk">散歩
+   </div>
+   <input type="button" id="check" value="check" disabled="true" />
+ </form>
  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
  <script src="js/script.js"></script>
 </body>
