@@ -100,4 +100,12 @@ $(function() {
             alert('3つまで');
         }
     });
+
+    $('#fadeOut').on('click', function() {
+        $('.box').fadeToggle(3000);
+    });
+
+    $('#slide').on('click', function() {
+        $('.box').slideToggle();
+    })
 });
